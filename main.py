@@ -29,13 +29,23 @@ from discord.ext import commands
 import asyncio 
 import time
 
+os.system("mode 175,30 & title [Username Sniper - By hold#1337]") 
+
+def erase():
+  if os.name == 'nt':
+    os.system('cls')
+  else:
+    os.system('clear')
+erase()
 
 tkn = input("[-] Enter Your Account Token: ")
+erase()
 pwd = input("[-] Enter Your Account Password: ") # this is required to change username
+erase()
 userid = input("[-] Enter Target User's ID who is holding the username currently: ")
 user = input("[-] Enter the username ( without discrim ) to snipe: ")
 discrim = input("[-] Enter Discrim : #")
-
+erase()
 
 intents = discord.Intents.all()
 intents.members = True
