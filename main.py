@@ -72,7 +72,7 @@ async def snap(usr:str, payload:str):
 async def on_ready(): 
   while True:
     await asyncio.sleep(1)
-    r = req.get("https://discord.com/api/v9//users/{}".format(userid), headers=headers) 
+    r = req.get("https://discord.com/api/v9/users/{}".format(userid), headers=headers) 
     idk = r.json()
     usern = idk["username"]
     zdiscrim = idk["discriminator"] 
